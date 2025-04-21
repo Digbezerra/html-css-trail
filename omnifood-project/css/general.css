@@ -1,0 +1,168 @@
+/*
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+      FONT WEIGHT SYSTEM (px)
+      Default: 400
+      Medium: 500
+      Semi-bold: 600
+      Bold: 700
+
+      LINE HEIGHT SYSTEM (px)
+      Default: 1
+      1.05
+      1.6
+
+      LETTER SPACING
+      -0.5px
+      0.75px
+
+      COLORS
+
+      Primary: 
+        #e67e22
+      Tints:
+        #fdf2e9
+      Shades:
+        #cf711f
+      Accents:
+      Greys:
+      #555
+      #333
+
+      SHADOWS
+
+      BORDER-RADIUS
+
+      9px
+
+      WHITESPACE
+
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #555;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/**************************************/
+/** HELPERS **/
+/**************************************/
+
+.margin-right-small {
+  margin-right: 1.6rem !important;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 4.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/**************************************/
+/** GENERAL COMPONENTS **/
+/**************************************/
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+}
+
+.btn--full:active,
+.btn--full:hover {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn--outline:active,
+.btn--outline:hover {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}

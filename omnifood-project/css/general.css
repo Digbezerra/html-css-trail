@@ -21,6 +21,8 @@
 
       Primary: 
         #e67e22
+        #37b24d
+        #ffd43b
       Tints:
         #fdf2e9
         #eea564
@@ -62,6 +64,10 @@ body {
   line-height: 1;
 }
 
+strong {
+  font-weight: 500;
+}
+
 /**************************************/
 /** HELPERS **/
 /**************************************/
@@ -74,6 +80,10 @@ body {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.section-padding {
+  padding: 9.6rem 0;
 }
 
 .grid {
@@ -107,7 +117,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 

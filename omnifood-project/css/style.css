@@ -357,28 +357,75 @@
 /**************************************/
 /** SECTION PRICING **/
 /**************************************/
-.pricing-plans-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
-  padding: 4.8rem 0;
-  align-items: center;
-  justify-content: center;
+.pricing-plan {
+  width: 75%;
+  border-radius: 9px;
+  padding: 4.6rem;
 }
 
-.pricing-plan {
-  display: flex;
-  flex-direction: column;
+.pricing-plan--starter {
+  border: 2px solid #fdf2e9;
+  justify-self: end;
+}
+
+.pricing-plan--complete {
+  justify-self: start;
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
 }
 
 .price-container {
   text-align: center;
 }
 
-.price-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1.6rem;
+.plan-name {
+  font-size: 2rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: #cf711f;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.plan-price span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }

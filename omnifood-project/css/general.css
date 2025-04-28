@@ -28,6 +28,7 @@
         #eea564
       Shades:
         #cf711f
+        #2e1907
       Accents:
       Greys:
       #aaa
@@ -70,6 +71,10 @@ strong {
   font-weight: 500;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(230, 125, 34, 0.8);
+}
 /**************************************/
 /** HELPERS **/
 /**************************************/
@@ -80,6 +85,10 @@ strong {
 
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 9.6rem !important;
 }
 
 .container {
@@ -140,21 +149,23 @@ strong {
 /** GENERAL COMPONENTS **/
 /**************************************/
 
+.btn-form,
 .btn:link,
 .btn:visited {
   display: inline-block;
   font-size: 2rem;
-  color: #fff;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
+  border: none;
 }
 
 .btn--full:link,
 .btn--full:visited {
+  color: #fff;
   background-color: #e67e22;
 }
 
@@ -186,6 +197,19 @@ strong {
 .btn--action:hover,
 .btn--action:active {
   color: #cf711f;
+}
+
+.btn-form {
+  width: 100%;
+  background-color: #2e1907;
+  color: #fff;
+  padding: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #2e1907;
 }
 
 .heading-primary,
@@ -225,10 +249,4 @@ strong {
 
 .grid-title {
   font-size: 3rem;
-}
-
-.plan-details {
-  text-align: center;
-  font-size: 1.8rem;
-  line-height: 1.5;
 }

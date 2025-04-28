@@ -347,11 +347,11 @@
 .testimonial-gallery-item img {
   display: block;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .testimonial-gallery-item img:hover {
-  transform: scale(1.2);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 /**************************************/
@@ -462,6 +462,9 @@
 /**************************************/
 /** SECTION CTA **/
 /**************************************/
+.section-cta {
+  padding-bottom: 12.8rem;
+}
 
 .cta {
   display: grid;
@@ -534,4 +537,77 @@
 .cta-form *:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
+}
+
+/**************************************/
+/** SECTION FOOTER **/
+/**************************************/
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icons {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer-logo img {
+  display: inline-block;
+  height: 2.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  color: #767676;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+  transition: all 0.2s;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #555;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.contact {
+  margin-top: auto;
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }

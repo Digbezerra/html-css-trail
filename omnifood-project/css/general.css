@@ -33,6 +33,7 @@
       Greys:
       #aaa
       #666
+      #767676
       #555
       #333
 
@@ -74,6 +75,11 @@ strong {
 *:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(230, 125, 34, 0.8);
+}
+
+footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #ccc;
 }
 /**************************************/
 /** HELPERS **/
@@ -117,6 +123,14 @@ strong {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .customer-photo {
@@ -191,12 +205,13 @@ strong {
   font-size: 1.8rem;
   color: #e67e22;
   text-decoration: underline;
-  transition: all 0.3s ease;
 }
 
 .btn--action:hover,
 .btn--action:active {
   color: #cf711f;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .btn-form {

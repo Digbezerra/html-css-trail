@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta
+      name="description"
+      content="HTML and CSS project to improve my old skills, Omnifood project is a fictional company that's a project to learn some html and css features which are basics to web developers"
+    />
+    <meta name="a" <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,8 +18,11 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <link rel="icon" href="images/favicon64.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
-    <title>OmniFood</title>
+    <title>OmniFood | Never cook again</title>
   </head>
   <body>
     <header class="header">
@@ -586,7 +592,7 @@
                 </div>
                 <div>
                   <label>Where did your hear from us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" required aria-label="where">
                     <option value="">Please choose one option:</option>
                     <option value="friend">A friend</option>
                     <option value="youtube">Youtube video</option>
@@ -617,7 +623,10 @@
             </a>
             <ul class="social-links">
               <li>
-                <a class="footer-link" href="#"
+                <a
+                  class="footer-link"
+                  href="https://www.instagram.com/"
+                  aria-label="Social media link to Instagram"
                   ><ion-icon
                     class="social-icons"
                     name="logo-instagram"
@@ -625,7 +634,10 @@
                 ></a>
               </li>
               <li>
-                <a class="footer-link" href="#"
+                <a
+                  class="footer-link"
+                  href="https://www.facebook.com/"
+                  aria-label="Social media link to facebook"
                   ><ion-icon
                     class="social-icons"
                     name="logo-facebook"
@@ -633,13 +645,17 @@
                 ></a>
               </li>
               <li>
-                <a class="footer-link" href="#"
+                <a
+                  class="footer-link"
+                  href="https://www.x.com/"
+                  aria-label="Social media link to X"
                   ><ion-icon class="social-icons" name="logo-twitter"></ion-icon
                 ></a>
               </li>
             </ul>
             <p class="copyright">
-              Copyright &copy; 2027 Omnifood, Inc. All rights reserved.
+              Copyright &copy; <span class="year"></span> Omnifood, Inc. All
+              rights reserved.
             </p>
           </div>
           <div class="address-col">
@@ -698,5 +714,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/zenscroll@4.0.2/zenscroll-min.js"></script>
   </body>
 </html>

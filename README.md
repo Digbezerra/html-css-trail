@@ -12,4 +12,4 @@ A Udemy course that I made years ago and return to refresh my skills ^^
 
 Netlify
 
-https://glittering-kelpie-055642.netlify.app/
+https://omnifood-dig.netlify.app
